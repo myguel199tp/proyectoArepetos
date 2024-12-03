@@ -1,0 +1,566 @@
+:root{
+    --color1:rgb(219,144,.5);
+    --color2:rgb(255,255,204);
+    --color3:rgba(0, 0, 0, .5);
+    --fondo: rgb(10, 10, 0);
+    --titulos: 33px;
+    --espacios: 20px;
+    --espacios-contenido:45px;
+    --subtitulos:14px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ }
+
+ body{
+    font-family: 'Gloria Hallelujah', cursive;
+    background: var(--fondo);
+}
+/*MENU DE NAVEGACIÓN*/
+
+nav{
+    background-color: transparent;
+    position: fixed;
+    z-index: 100;
+   
+  }
+.contenedor-nav{
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height:inherit;
+    overflow: hidden; 
+    background: var(--fondo);
+    z-index: 100;
+    position: fixed;
+  
+}
+
+.grid-container{
+    display:grid;   
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    justify-content:center;   
+
+}
+.grid-container .site-nav{
+    margin-left: 250px;
+}
+nav .site-nav a{
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+    color: var(--color2);
+    
+   
+   
+}
+nav .site-nav a:hover{
+    border-bottom: 4px dotted var(--color1);
+    border-top: 4px dotted var(--color2);
+    transition: 0.6s; 
+    color: var(--color2);
+    
+}
+
+.logo, .logo img{
+    width: 150px;
+    cursor: pointer;
+    
+}
+.logo img:hover{
+    
+    border-bottom: 4px dotted var(--color1);
+    border-top: 4px dotted var(--color2);
+  
+    
+}
+
+/****/
+.btn-whatsapp{
+    background:rgb(37, 119, 34);    
+    position: fixed;
+    width: 45px;
+    height: 55px;
+    line-height: 55px;
+    bottom:30px;
+    color:#fff;
+    border-radius: 65px;
+    text-align: center;
+    margin-left: 50px;
+    z-index: 100;
+}
+
+.btn-whatsapp:hover{
+    background: rgb(12, 219, 5);
+   
+}
+
+.btn-whatsapp i{
+    font-size: 40px;
+}
+
+/***/
+
+.slideshow-container{
+    margin-top: 0px;
+    width: 100%; 
+   
+  
+}
+
+.grid-container{
+    display:grid;   
+    grid-template-columns: auto;
+    justify-content:center;
+}
+
+.mySlides img{    
+   width: 1100px;
+   height: 650px;
+   margin-top: 50px;
+   opacity:98%;
+   z-index: 90;
+   -webkit-box-shadow: 0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    -moz-box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    z-index: 0;
+    
+}
+
+h2{
+    color: var(--color2);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-left: var(--espacios);
+    text-shadow: 5px 4px 9px var(--color2);
+}
+
+/*COMIDAS*/
+
+.wrap{
+    width: 1100px;
+    /*display:flex;*/ 
+      
+
+}
+
+.grid-container{
+    display:grid;   
+    grid-template-columns: auto auto ;    
+    width: 100%;
+}
+
+.grid-container .tarjeta-wrap{  
+        width: 450px;
+    
+}
+
+.tarjeta-wrap{
+    margin:20px;
+    -webkit-perspective: 700;
+    perspective: 700;
+
+}
+
+.tarjeta{
+    width: 430px;
+    height: 455px;
+    border-radius: 20%;  
+    background:rgba(8, 8, 1, 0.76);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .8s ease;
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    -moz-box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    z-index: 0;
+}
+
+.adelante,.atras{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; 
+    z-index: 0;   
+
+}
+
+.adelante{
+    width: 100%;
+    border-radius: 20%;
+    z-index:0;
+    
+}
+
+.adelante .menciones{
+    color: var(--color2);
+    text-align:center;
+    margin-top: 320px;
+    font-size: 30px;    
+}
+
+.atras{
+    transform: rotateY(180deg);
+    z-index:100;
+    overflow-y: auto;
+    background-color: transparent;
+    border-radius: 20%;
+
+}
+
+.atras::-webkit-scrollbar{
+    width: 2px;
+    background: transparent;
+    height: 100%
+}
+
+.atras .menu{
+    padding: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+}
+.menu ul{
+    display: block;
+}
+
+.menu li{
+    background-color: var(--color2);
+    border-radius:50%;
+    color:var(--color1); 
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: capitalize;
+    list-style: none;
+    width:250px;
+    border:3px solid var(--color1);
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+
+}
+
+.card1{
+    background-image: url(imagenes/posicion2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:95%;
+        
+
+}
+.card2{
+    background-image: url(imagenes/hamburguesa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:90%;
+}
+.card3{
+    background-image: url(imagenes/carne.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:90%;
+}
+.card4{
+    background-image: url(imagenes/alitas.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:90%;
+}
+
+.card5{
+    background-image: url(imagenes/hotdog.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:90%;
+}
+
+.card6{
+    background-image: url(imagenes/salchipapa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:90%;
+}
+
+.card7{
+    background-image: url(imagenes/mazorcada.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:90%;
+}
+
+.card8{
+    background-image: url(imagenes/arepa.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: center;
+    margin-left: 0px;
+    opacity:90%;
+}
+
+/*info comida*/
+
+.info-comida{
+    background-color: var(--color2);
+    width: 100%;
+    border-radius: 20%;
+    padding: var(--espacios);
+    position: relative;
+    z-index:0;
+    display:block;
+    
+}
+
+.info-comida .precio{
+    font-size: 30px;
+    font-weight: 800;
+    
+   
+}
+
+.info-comida p{
+    font-size: 20px;
+}
+
+
+.info-comida img{
+    border: 2px solid #111;
+    border-radius: 30%;
+
+}
+
+.info-comida .mybtn{
+    background: var(--color3);
+    color: var(--fondo);
+    width: 90px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+
+.info-comida .mybtn:hover{
+    background: var(--color2);
+    color: var(--color3);
+}
+/*BEBIDAS*/
+
+
+.todas-bebidas{    
+    justify-content:center;
+   
+}
+
+.jugos{
+    background-image: url(imagenes/bebida1.png);
+    background-size: 250px;
+    background-repeat:repeat-y;   
+    width: 550px;
+    text-align:center;
+    padding-left: 30px;
+    padding-top: 20px;
+    color: var(--color2);
+    list-style: none;
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    -moz-box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    z-index: 0;
+   
+}
+
+.bebidas-diferentes{
+    background-image: url(imagenes/bebida2.png);
+    background-size: 280px;     
+    background-repeat:repeat-y;   
+    width: 550px;
+    text-align:center;
+    padding-left: 50px;
+    padding-top: 20px;
+    color: var(--color2);
+    list-style: none;
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    -moz-box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    box-shadow:0px 0px 15px -5px rgba(102, 79, 5, 0.911);
+    z-index: 0;
+
+}
+
+/*****/
+/*fOOTER*/
+
+/*fOOTER*/
+
+footer{
+    background: #000;
+    height: auto;
+    padding-top: 10px;
+} 
+.first_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.first_footer h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 15px;
+    color: #fff;
+}
+
+.first_footer li{
+    margin-top: 10px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.first_footer li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-top: 50px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+.socials li{
+    margin: 0 2px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff5ea;
+  
+}
+
+.socials a i{
+    font-size: 28px;
+    
+}
+
+.footer-boottom{
+  background: #000;
+  width: 98%;
+  padding: 10px 0;
+  text-align: center;
+
+}
+
+.footer-boottom p{
+    color: #fff;
+
+}
+
+.sello{
+    color: #fff
+}
+
+
+@media(max-width: 600px){
+  
+    .grid-container{
+        display:grid;   
+        grid-template-columns: auto;
+        justify-content:center;
+        width: 400px;
+        margin-left: 0px;
+   
+    }
+   
+    .contenedor-nav{
+      
+     
+      padding: -10px;
+      height:40px
+            
+      
+    }
+
+    .logo, .logo img{
+        
+        width: 100px;
+        justify-content:center;           
+        
+    }
+    #enlace-inicio,
+    #enlace-comida,
+    #enlace-bebida,#enlace-encuentranos{
+        display: none
+    }
+
+    .mySlides img{
+        width: 300px;
+        height: 350px
+    }
+
+    .tarjeta{
+        margin-left:10px;
+        width: 390px;
+        border: 1px solid #222;
+    } 
+    .jugos{
+       width: 400px;
+       background-size: 180px;
+       
+    }
+    
+    .bebidas-diferentes{
+        width: 400px;
+        background-size: 180px;
+        
+    }  
+    
+    .socials{
+        
+        display: block;
+    }
+
+  
+}

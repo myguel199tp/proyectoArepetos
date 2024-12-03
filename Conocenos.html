@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b426ddce04.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="conocenos.css">    
+    <title>Conocenos</title>
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/icono.ico">
+</head>
+<body>
+    <header>       
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+            <div class="logo">
+                   <img src="imagenes/logo.png" alt="">
+            </div>
+            <div class="site-nav" id="site-nav">
+            <a href="Arepetos.html" id="" class="#">Inicio</a>                     
+            </div>    
+            <div id="menu-toggle" class="menu-toogle" onclick="cambiarClase()">
+                <div class="hamburguer"></div>
+            </div> 
+        </div>        
+        </nav>
+    </header>
+    <br>
+    <section class=grid-container>
+
+        <div>
+            <div>
+            <h2>conocenos</h2>
+            <img src="imagenes/conocenos.png">
+            <p>Arepetos es una empresa familiar la cual se de dedica a la producción y comercialización de arepas de maíz peto en
+                un punto de venta en Bogotá donde podra encontrar diferentes productos comó  arepas y hamburguesas de una 
+                gastronomía artesanal.</p>
+               <i class="fas fa-angle-double-down" onclick="mostrar()"></i>
+            </div>
+            <div id="contenido">
+                <i class="fas fa-angle-double-up" onclick="ocultar()"></i>
+
+                <h3>mision</h3>
+                <p>Dar al mercado de las comidas rápidas   un concepto tradicional e  innovador sobre nuestros sabores y 
+                    tradiciones Colombianas combinando  platos que le permita el uso del   maíz peto donde no solo se hacen 
+                    arepas si no tambien hamburgesas  coitan al cliente tener una experiencia gastronómica diferente 
+                    en la ciudad de Bogotá.
+                </p>
+                <h3>vision</h3> 
+                <p>Queremos crear un modelo de negocio más sostenible que nos permita  abrir nuevos puntos 
+                    de venta en la ciudad de Bogotá,empezando con dos  puntos de venta más  ofreciendo siempre 
+                    la mejor calidad y servicio humano a nuestros clientes conservando nuestros principios éticos
+                    como empresa.</p>  
+            </div>
+        </div>
+
+        <div>
+            <div>
+            <h2>eventos</h2>
+            <img src="imagenes/conocenos.png">
+            <p>Arepetos le presta su establecimiento para que pueda disfrutar en familia y con amigos las mejor experiencia en su dia especial 
+                en un espacio independiente y comodo donde peude celebrar cumpleaños, grados o cualquier celebridad que desee, para mas información
+                dando click en Evento Arepetos</p>
+                <i class="fas fa-angle-double-down" onclick="mostrar2()"></i>
+            </div>
+            <div id="contenido2">
+                <i class="fas fa-angle-double-up" onclick="ocultar2()"></i>
+                <p>Enviar a nuestro whatsapp, al cual puede acceder dando click en contacto la siguente información:
+                    <ul>
+                        <li>Nombre y apellido</li>
+                        <li>Telefono</li>
+                        <li>Email</li>                        
+                        <li>Evento a realizar</li>
+                        <li>Numero de personas que asistiran al evento</li>
+                    </ul>
+                <a href="https://api.whatsapp.com/send?phone=+573134620806" text="bienvenido a arepetos" class="btn-whatsapp" target="_brank">
+                    <button class="my-btno">contacto</button>
+                </a> 
+                
+            </div>
+
+        </div>
+
+        <div>
+            <div>
+            <h2>franquicias</h2>
+            <img src="imagenes/franquicia.png">
+            <p>Arepetos es una empresa reconocida en la cidad de Bogotá con grandes extandares de calidad la cual la
+                convierte en un modelo favorable en el sector de los alimentos. si desea ser parte de esta familia 
+                y poder tener una de nuestras franquicias dando click en franquicias arepetos encontrara mayor información</p>
+                <i class="fas fa-angle-double-down" onclick="mostrar3()"></i>
+            </div>
+            <div id="contenido3">
+                <i class="fas fa-angle-double-up" onclick="ocultar3()"></i>
+                <p>Gracias por estar interesado en ser parte de la familia arepetos el analisis de la solicitud consta de 3 días, posterior
+                    a ello si solicitud es aprobada tendra un periodo de entrenamiento de 2 meses donde conocera más a fondo el negocio y sus
+                    productos. 
+                </p>
+                <p>Enviar a nuestro whatsapp al cual puede acceder dando click en nuestro boton de contacto dando la siguente información:
+                    <ul>
+                        <li>Nombre y apellido</li>
+                        <li>Edad</li>
+                        <li>País</li>
+                        <li>Ciudad</li>
+                        <li>Barrio</li>
+                        <li>Telefono</li>
+                        <li>Email</li>
+                        <li>Profesión</li>
+                        <li>¿Por que quiere una franquicia?</li>
+                    </ul>
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=+573134620806" class="btn-whatsapp" target="_brank">
+                    <button class="my-btno">contacto</button>
+                </a>                 
+            </div>
+
+        </div>
+        
+
+
+    </section>
+    
+    
+        <script src="conocenos.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+:root{
+    --color1:rgb(219,144,.5);
+    --color2:rgb(255,255,204);
+    --color3:rgba(0, 0, 0, 0.897);
+    --fondo: rgb(10, 10, 0);
+    --titulos: 33px;
+    --espacios: 20px;
+    --espacios-contenido:20px;
+    --subtitulos:14px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+ }
+
+ body{
+    font-family: 'Gloria Hallelujah', cursive;
+    background: var(--color2);
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    z-index: 100;
+    background:var(--fondo);
+  }
+
+.contenedor-nav{
+    display:flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height:inherit;
+    overflow: hidden;  
+}
+
+nav .site-nav a{
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    font-size: 20px;
+    color: var(--color2);
+}
+nav .site-nav a:hover{
+    border-bottom: 4px dotted var(--color1);
+    border-top: 4px dotted var(--color2);
+    transition: 0.6s; 
+    color: var(--color2);
+}
+
+.logo, .logo img{
+    width: 150px;
+        
+}
+/******/
+
+h2{
+    text-transform:capitalize
+}
+
+.grid-container{
+    display:grid;   
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));    
+      
+}
+
+.grid-container div{
+    justify-content: center;
+    margin:0 auto;
+}
+
+
+.grid-container img{
+    width:340px;
+    height: 240px;
+    padding: 20px
+}
+
+
+.grid-container p{
+    width:340px
+}
+
+.grid-container i{
+    width: 250px;
+    margin-top:10px;
+    cursor: pointer;    
+}
+
+#contenido{
+    display:none;
+}
+#contenido2{
+    display:none;
+}
+#contenido3{
+    display:none;
+}
+
+li{
+    list-style: none;
+    background-color: aliceblue;
+    padding: 5px
+}
+
+
+
+.my-btno{
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    background: var(--fondo);
+    color: var(--color2);
+    font-size:18px;
+    text-transform:capitalize;
+    
+}
+
+.my-btno:hover{
+    background: var(--color2);
+    color:var(--fondo);
+}
+
+
+
+@media(max-width: 600px){
+    .grid-container{
+        display:grid;   
+        margin-top: 100px;
+        grid-template-columns: auto;
+          
+    }
+    
+}
